@@ -7,7 +7,7 @@
  *   { ok: false, error: "..." }  on failure
  */
 
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://creditassistant.onrender.com";
 
 // ---------------------------------------------------------------------------
 // Helper — make a fetch call and normalise the response
@@ -48,7 +48,7 @@ async function apiFetch(method, path, body = null) {
     return {
       ok: false,
       error:
-        "Cannot connect to the server. Make sure the backend is running on http://localhost:8000",
+  "Cannot connect to the server. Please try again later.",
     };
   }
 }
@@ -169,7 +169,7 @@ export async function generateReport(userId) {
     return {
       ok: false,
       error:
-        "Cannot connect to the server. Make sure the backend is running on http://localhost:8000",
+  "Cannot connect to the server. Please try again later.",
     };
   }
 }
