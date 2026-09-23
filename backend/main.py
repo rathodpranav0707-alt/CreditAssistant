@@ -44,9 +44,8 @@ app = FastAPI(
 # ---------------------------------------------------------------------------
 # CORS — allow the Vite React dev server to reach this API
 # ---------------------------------------------------------------------------
-FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
+FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "https://rathodpranav0707-alt.github.io")
 
-# Allow localhost and 127.0.0.1 for local development
 allowed_origins = [FRONTEND_ORIGIN]
 if "http://localhost:5173" not in allowed_origins:
     allowed_origins.append("http://localhost:5173")
